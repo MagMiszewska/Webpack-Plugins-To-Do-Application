@@ -1,0 +1,14 @@
+.todo__item {
+    border: 2px solid #20407c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: rgb(160, 229, 241);
+}
+
+.todo__button {
+    color: #fff;
+    background-color: #20407c;
+    border-radius: 5px;
+}

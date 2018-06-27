@@ -1,0 +1,9 @@
+.form {
+    color: #20407c;
+}
+
+.form__button {
+    color: #fff;
+    background-color: #20407c;
+    border-radius: 10px;
+}
