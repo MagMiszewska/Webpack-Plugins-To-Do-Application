@@ -2,14 +2,14 @@ import React from 'react';
 import style from './TodoForm.css';
 
 class TodoForm extends React.Component {
-    constructor(props){
-	    super(props);
-	    this.state = {
-	    	text: ''
-	    };
+	constructor(props) {
+		super(props);
+		this.state = {
+			text: ''
+		};
 
-	    this.handleChange = this.handleChange.bind(this);
-	    this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleChange(event) {
@@ -21,8 +21,8 @@ class TodoForm extends React.Component {
 	handleSubmit(event) {
 		event.preventDefault();
 		this.props.add(this.state.text);
-		this.setState ({
-			text: '' 
+		this.setState({
+			text: ''
 		});
 	}
 
@@ -33,7 +33,7 @@ class TodoForm extends React.Component {
 					Dodaj zadanie:
 					<input type="text" placeholder="Napisz zadanie" value={this.state.text} onChange={this.handleChange} />
 				</label>
-				<button className={style.form__button}type="submit">Dodaj</button>				
+				<button className={style.form__button} type="submit">Dodaj</button>
 			</form>
 		)
 	}
