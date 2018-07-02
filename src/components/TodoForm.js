@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import style from './TodoForm.css';
 
@@ -39,5 +40,8 @@ class TodoForm extends React.Component {
 	}
 }
 
+TodoForm.propTypes = {
+	add: PropTypes.func
+}
 
 export default TodoForm;
